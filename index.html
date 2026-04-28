@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>J4 Adventures | Explore the Pearl of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+     <a href="index.html">
+    <img src="pics/logo2.jpeg" 
+         alt="Company Logo" 
+         width="150" 
+         height="80">
+</a>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact" class="nav-cta">Plan My Trip</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" onclick="toggleDrawer()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#home" onclick="closeDrawer()">Home</a>
+    <a href="#tours" onclick="closeDrawer()">Tours</a>
+    <a href="#destinations" onclick="closeDrawer()">Destinations</a>
+    <a href="#about" onclick="closeDrawer()">About Us</a>
+    <a href="#blog" onclick="closeDrawer()">Blog</a>
+    <a href="#contact" onclick="closeDrawer()" class="drawer-cta">Plan My Trip ✈️</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-star"></i> Uganda's Trusted Travel Partner</div>
+        <h1 class="hero-title">Discover the <em>Wild Heart</em><br>of East Africa</h1>
+        <p class="hero-sub">J4 Adventures Limited crafts seamless, unforgettable journeys — gorilla treks, wildlife safaris, cultural tours & beyond. Your adventure begins here.</p>
+        <div class="hero-btns">
+          <a href="#tours" class="btn-hero btn-hero-solid"><i class="fas fa-compass"></i> Explore Tours</a>
+          <a href="#contact" class="btn-hero btn-hero-ghost"><i class="fas fa-envelope"></i> Plan My Trip</a>
+      
+        </div>
+      </div>
+    </div>
+      
+  </section>
+
+  <!-- ── TRUST BAR ── -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-items">
+        <div class="trust-item"><i class="fas fa-shield-alt"></i> Licensed & Insured</div>
+        <div class="trust-item"><i class="fas fa-plane"></i> Flight & Visa Support</div>
+        <div class="trust-item"><i class="fas fa-leaf"></i> Eco-Responsible Tourism</div>
+        <div class="trust-item"><i class="fas fa-headset"></i> 24/7 Dedicated Support</div>
+        <div class="trust-item"><i class="fas fa-star"></i> Top-Rated Guides</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TOURS ── -->
+  <section id="tours" class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label reveal">Signature Experiences</p>
+        <h2 class="section-title reveal reveal-delay-1">Our Most Loved Tours</h2>
+        <p class="section-sub reveal reveal-delay-2">Hand-crafted adventures led by local experts. Every itinerary is designed to take you deeper into the heart of Africa.</p>
+      </div>
+      <div class="tours-grid">
+        <div class="tour-card reveal">
+          <div class="tour-img-wrap">
+            <img src="pics/kats5.jpg" alt="Chimpanzee trekking Kibale">
+            <div class="tour-badge">Popular</div>
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">🐒 Chimpanzee Trekking</h3>
+            <p class="tour-desc">Track playful chimps through the misty trails of Kibale Forest & Kyambura Gorge. Expert naturalist guides ensure a safe, immersive primate encounter.</p>
+            <div class="tour-footer">
+              <div class="tour-price">From $190 <span>/ person</span></div>
+              <a href="#contact" class="tour-link">Book now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card reveal reveal-delay-1">
+          <div class="tour-img-wrap">
+            <img src="pics/kats3.jpg" alt="Gorilla trekking Bwindi">
+            <div class="tour-badge">Best Seller</div>
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">🦍 Gorilla Trekking</h3>
+            <p class="tour-desc">A once-in-a-lifetime encounter with majestic mountain gorillas in Bwindi Impenetrable Forest — UNESCO World Heritage Site. Permits included.</p>
+            <div class="tour-footer">
+              <div class="tour-price">From $700 <span>/ person</span></div>
+              <a href="#contact" class="tour-link">Book now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card reveal reveal-delay-2">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=700&auto=format" alt="Wildlife safari Uganda">
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">🦁 Wildlife Safaris</h3>
+            <p class="tour-desc">Big Five game drives across Queen Elizabeth NP, Murchison Falls & Kidepo Valley. Watch lions, elephants & hippos in their natural savannah home.</p>
+            <div class="tour-footer">
+              <div class="tour-price">3–7 day packages</div>
+              <a href="#contact" class="tour-link">Book now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card reveal reveal-delay-3">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1517824806704-9040b037703b?w=700&auto=format" alt="Romantic honeymoon Africa">
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">💍 Honeymoon Escapes</h3>
+            <p class="tour-desc">Romantic lodges, sunset Nile cruises & private bush dinners under the stars. Tailored all-inclusive packages for the perfect African getaway for two.</p>
+            <div class="tour-footer">
+              <div class="tour-price">All-inclusive</div>
+              <a href="#contact" class="tour-link">Book now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card reveal">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=700&auto=format" alt="Family safari Uganda">
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">👨‍👩‍👧‍👦 Family Adventures</h3>
+            <p class="tour-desc">Kid-friendly safaris, cultural village visits & exciting boat rides. Create lifelong memories with your loved ones across Uganda's most scenic landscapes.</p>
+            <div class="tour-footer">
+              <div class="tour-price">Custom packages</div>
+              <a href="#contact" class="tour-link">Book now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tour-card reveal reveal-delay-1">
+          <div class="tour-img-wrap">
+            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=700&auto=format" alt="Rwenzori mountain hiking">
+          </div>
+          <div class="tour-body">
+            <h3 class="tour-title">⛰️ Mountain Hiking</h3>
+            <p class="tour-desc">Conquer the legendary Rwenzori Mountains ("Mountains of the Moon"), Mt. Elgon or hike the spectacular Sipi Falls. For thrill-seekers and nature lovers.</p>
+            <div class="tour-footer">
+              <div class="tour-price">Multi-day expeditions</div>
+              <a href="#contact" class="tour-link">Book now <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DESTINATIONS ── -->
+  <section id="destinations" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Where We Go</p>
+        <h2 class="section-title">East African Gems</h2>
+        <p class="section-sub">From the gorilla-covered hills of Bwindi to the Serengeti's endless plains — we bring you closer to Africa's greatest wonders.</p>
+      </div>
+      <div class="dest-grid reveal">
+        <div class="dest-card">
+          <img src="pics/kats9.jpg" alt="Uganda Bwindi gorillas">
+          <div class="dest-overlay"></div>
+          <div class="dest-info">
+            <div class="dest-name"><span class="dest-flag">🇺🇬</span> Uganda</div>
+            <div class="dest-tagline">Bwindi gorillas · Murchison Falls · Source of the Nile · Rwenzori</div>
+            <span class="dest-chip"><i class="fas fa-star"></i> Our Home Base</span>
+          </div>
+        </div>
+        <div class="dest-card">
+          <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01b3c?w=600&auto=format" alt="Kenya Masai Mara safari">
+          <div class="dest-overlay"></div>
+          <div class="dest-info">
+            <div class="dest-name"><span class="dest-flag">🇰🇪</span> Kenya</div>
+            <div class="dest-tagline">Masai Mara · Amboseli · Coastal Culture</div>
+          </div>
+        </div>
+        <div class="dest-card">
+          <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=600&auto=format" alt="Rwanda Volcanoes gorilla">
+          <div class="dest-overlay"></div>
+          <div class="dest-info">
+            <div class="dest-name"><span class="dest-flag">🇷🇼</span> Rwanda</div>
+            <div class="dest-tagline">Volcanoes NP · Nyungwe Walk · Kigali</div>
+          </div>
+        </div>
+        <div class="dest-card">
+          <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&auto=format" alt="Tanzania Serengeti">
+          <div class="dest-overlay"></div>
+          <div class="dest-info">
+            <div class="dest-name"><span class="dest-flag">🇹🇿</span> Tanzania</div>
+            <div class="dest-tagline">Serengeti · Ngorongoro · Zanzibar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY US ── -->
+  <section id="why" class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <p class="section-label reveal">Why Choose J4</p>
+        <h2 class="section-title reveal reveal-delay-1">Your Journey, Our Promise</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <div class="why-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <h3>Local Expertise</h3>
+          <p>Born and raised in Uganda, our guides know every trail, lodge and hidden gem across East Africa.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Responsible Tourism</h3>
+          <p>We partner with eco-certified lodges and contribute to local conservation and community programs.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon"><i class="fas fa-plane-departure"></i></div>
+          <h3>End-to-End Planning</h3>
+          <p>Flights, visas, transfers, accommodation — we handle every detail so you travel stress-free.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <h3>24/7 Support</h3>
+          <p>A dedicated travel expert is always available — before, during, and after your trip.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-imagery reveal">
+          <div class="about-accent"></div>
+          <img class="about-img-main" src="" alt="Uganda gorilla trekking">
+          <img class="about-img-float" src="pics/kats7.jpg" alt="Safari wildlife">
+        </div>
+        <div class="about-text reveal reveal-delay-1">
+          <p class="section-label">Our Story</p>
+          <h2 class="section-title">About J4 Adventures</h2>
+          <blockquote class="about-quote">"Connecting you to Uganda & the world — one unforgettable journey at a time."</blockquote>
+          <p><strong>J4 Adventures Limited</strong> is a dynamic travel and tourism company headquartered in Luzira, Kampala — the heart of the Pearl of Africa. With over a decade of experience, we offer seamless, end-to-end travel solutions trusted by thousands of travelers worldwide.</p>
+          <p>Our deep local knowledge, strong global network, and passion for authentic experiences set us apart. Whether it's your first gorilla trek or a luxury honeymoon safari, we craft journeys that exceed expectations.</p>
+          <div class="about-checks">
+            <div class="check-item">
+              <div class="check-icon"><i class="fas fa-check"></i></div>
+              <p>Licensed & fully insured with 10+ years of operation</p>
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><i class="fas fa-check"></i></div>
+              <p>Expert local guides fluent in English, French & Swahili</p>
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><i class="fas fa-check"></i></div>
+              <p>Sustainable, community-first travel practices</p>
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><i class="fas fa-check"></i></div>
+              <p>Fully customisable itineraries for all group sizes</p>
+            </div>
+          </div>
+          <p style="font-size:.85rem; color:var(--muted);"><i class="fas fa-map-pin" style="color:var(--forest)"></i> &nbsp;Luziiroad, Nakawa Division, Kampala, Uganda</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BLOG ── -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Travel Stories</p>
+        <h2 class="section-title">Insights & Inspiration</h2>
+        <p class="section-sub">Expert tips, traveler stories and destination guides to help you plan the perfect African adventure.</p>
+      </div>
+      <div class="blog-grid reveal">
+        <div class="blog-featured">
+          <img src="https://images.unsplash.com/photo-1535242208474-9a2791a2c6a2?w=800&auto=format" alt="Gorilla trekking Bwindi tips">
+          <div class="blog-featured-overlay"></div>
+          <div class="blog-featured-body">
+            <span class="blog-cat">Wildlife</span>
+            <h3 class="blog-featured-title">5 Essential Tips for Gorilla Trekking in Bwindi</h3>
+            <p class="blog-featured-meta"><i class="fas fa-clock"></i> 5 min read &nbsp;·&nbsp; March 2025</p>
+          </div>
+        </div>
+        <div class="blog-stack">
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1548013146-72479768a5ad?w=300&auto=format" alt="Best time safari">
+            <div class="blog-card-body">
+              <span class="blog-cat" style="font-size:.65rem; padding:.2rem .55rem;">Safari</span>
+              <h4 class="blog-card-title">Best Time of Year for East African Wildlife Safaris</h4>
+              <p class="blog-card-excerpt">Dry season vs green season: when to spot the Big Five.</p>
+              <p class="blog-card-meta"><i class="fas fa-clock"></i> 4 min read</p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=300&auto=format" alt="Jinja Nile adventures">
+            <div class="blog-card-body">
+              <span class="blog-cat" style="font-size:.65rem; padding:.2rem .55rem;">Adventure</span>
+              <h4 class="blog-card-title">Jinja: Uganda's Adrenaline Capital at the Nile Source</h4>
+              <p class="blog-card-excerpt">White-water rafting, bungee jumping & boat cruises.</p>
+              <p class="blog-card-meta"><i class="fas fa-clock"></i> 3 min read</p>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1548061450-5d6344b82eb3?w=300&auto=format" alt="Uganda packing list">
+            <div class="blog-card-body">
+              <span class="blog-cat" style="font-size:.65rem; padding:.2rem .55rem;">Tips</span>
+              <h4 class="blog-card-title">The Ultimate Uganda Safari Packing Guide</h4>
+              <p class="blog-card-excerpt">Everything you need — and what to leave at home.</p>
+              <p class="blog-card-meta"><i class="fas fa-clock"></i> 6 min read</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title">Let's Plan Your Adventure</h2>
+        <p class="section-sub">Tell us your dream — our travel experts will craft a personalized itinerary just for you, completely free.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-block reveal">
+          <h3>We'd Love to Hear From You</h3>
+          <p>Whether you're dreaming of gorillas, safaris, or a romantic getaway, we're here to make it happen. Reach out and we'll respond within 24 hours.</p>
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="info-label">Visit Us</div>
+                <div class="info-value">Luziiroad, Nakawa Division, Kampala, Uganda</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <div class="info-label">Call / WhatsApp</div>
+                <div class="info-value">+256 782 123 456 &nbsp;|&nbsp; +256 701 234 567</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="info-label">Email</div>
+                <div class="info-value">info@j4adventures.com</div>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <div class="info-label">Office Hours</div>
+                <div class="info-value">Mon–Fri: 8:00–18:00 &nbsp;|&nbsp; Sat: 9:00–14:00</div>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/256782123456" target="_blank" class="whatsapp-cta">
+            <i class="fab fa-whatsapp"></i>
+            Chat on WhatsApp — we reply fast!
+          </a>
+        </div>
+
+        <div class="contact-form-card reveal reveal-delay-2">
+          <h3>Send an Inquiry</h3>
+          <p>Free personalised itinerary within 24 hours.</p>
+          <form id="travelForm" onsubmit="submitForm(event)">
+            <div class="form-row">
+              <div class="fg">
+                <label>Full Name *</label>
+                <input type="text" id="name" placeholder="Your full name" required>
+              </div>
+              <div class="fg">
+                <label>Email Address *</label>
+                <input type="email" id="email" placeholder="you@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="fg">
+                <label>Phone / WhatsApp</label>
+                <input type="tel" id="phone" placeholder="+256 ...">
+              </div>
+              <div class="fg">
+                <label>Tour of Interest</label>
+                <select id="tour">
+                  <option value="">Select a tour...</option>
+                  <option>Gorilla Trekking</option>
+                  <option>Chimpanzee Trekking</option>
+                  <option>Wildlife Safari</option>
+                  <option>Honeymoon Escape</option>
+                  <option>Family Adventure</option>
+                  <option>Mountain Hiking</option>
+                  <option>Custom Itinerary</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg">
+              <label>Tell Us About Your Dream Trip *</label>
+              <textarea id="message" placeholder="Destination, group size, travel dates, budget, special requests..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Send My Inquiry</button>
+            <p id="formFeedback"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-name" style="font-size:1.5rem; color:white;">J4 Adventures</div>
+          <div class="logo-tagline" style="color:rgba(255,255,255,0.5);">Explore the Pearl</div>
+          <p>Seamless journeys, unforgettable experiences. Your gateway to Uganda and the world — crafted with passion and local expertise.</p>
+          <div class="footer-socials">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Tours</h4>
+          <ul>
+            <li><a href="#tours">Gorilla Trekking</a></li>
+            <li><a href="#tours">Chimpanzee Tours</a></li>
+            <li><a href="#tours">Wildlife Safaris</a></li>
+            <li><a href="#tours">Honeymoon Escapes</a></li>
+            <li><a href="#tours">Family Adventures</a></li>
+            <li><a href="#tours">Mountain Hiking</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Destinations</h4>
+          <ul>
+            <li><a href="#destinations">🇺🇬 Uganda</a></li>
+            <li><a href="#destinations">🇰🇪 Kenya</a></li>
+            <li><a href="#destinations">🇷🇼 Rwanda</a></li>
+            <li><a href="#destinations">🇹🇿 Tanzania</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About J4</a></li>
+            <li><a href="#blog">Travel Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 J4 Adventures Limited — All Rights Reserved</p>
+        <p>Designed with ❤️ in Kampala, Uganda</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/256782123456" target="_blank" class="fab-whatsapp" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
